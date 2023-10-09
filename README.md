@@ -33,7 +33,7 @@ Servo motor and the sanitizer is expelled out of the bottle.
 
 **=>Working**
 
-The first component we made use of in the circuit is a HC- SR04 ultrasonic sensor
+The first component I made use of in the circuit is a HC- SR04 ultrasonic sensor
 to give the perception of the distance of the object (hand). This type of sensor is
 able to give accurate measurements of distance in the range of 2 cm to 450 cm and
 has a focus of less than 15 degrees. In order to calculate the distance, the sensor
@@ -48,7 +48,7 @@ Time= round trip time/2
 Usage of the Ultrasonic Sensor- the VCC and GND of the ultrasonic sensor is
 connected to a 5V power supply. The trigger (TRIG) pin and the echo (ECHO) pin
 are connected to the digital output and digital input respectively on the Arduino
-UNO. We then pulse the trigger (TRIG) pin high for time duration of at least 10µs
+UNO. I then pulse the trigger (TRIG) pin high for time duration of at least 10µs
 and the wait for the response for a high on the echo (ECHO) pin. The amount of
 time the echo pin stays high corresponds to the distance of the object from the
 sensor. Faster the response, lesser is the object’s distance. 
