@@ -19,7 +19,7 @@ Made an automatic hand sanitizer with the help of Arduino.
 
 =>Basic Working
 
-● We make use of an ultrasonic sensor (Range: 2 cm to 400 cm and operating voltage: 5V)
+● Made use of an ultrasonic sensor (Range: 2 cm to 400 cm and operating voltage: 5V)
 to calculate the distance between the hand and the sanitizer bottle.
 
 ● The trigger pin of the sensor transmits a high frequency sound and when it hits the hand,
