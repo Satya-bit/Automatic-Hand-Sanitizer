@@ -1,0 +1,49 @@
+Code:
+#include <Servo.h> // This includes the Servo library that comes with Arduino CC
+software.
+const int trigPin = 10;
+const int echoPin = 11;
+long duration;
+int distance;
+Servo myServo;
+void setup() {
+myServo.attach(12); // This functions attaches the Servo motor to a pin.
+pinMode(trigPin, OUTPUT); // Sets the trigPin as an output
+pinMode(echoPin, INPUT); // Sets the echoPin as an input
+Serial.begin(9600); // This makes serial port capable of transferring maximum of
+9600 bits per seconds.
+}
+void loop() {
+ // The following code runs in an infinite loop
+distance = calculateDistance();
+myServo.write(0);
+if ( distance< 5)
+{ myServo.attach(12);
+myServo.write(160); //This function writes the value of angle to the servo in
+degrees.
+delay(500);
+myServo.write(0);
+delay(1000);
+}
+else{
+myServo.detach();
+}
+Serial.println(distance);
+}
+int calculateDistance(){
+// This function calculates distance and returns it as an integer.
+digitalWrite(trigPin, LOW);
+delayMicroseconds(5);
+ // Sets the trigPin on HIGH state for 10 micro seconds
+digitalWrite(trigPin, HIGH);
+delayMicroseconds(10);
+digitalWrite(trigPin, LOW);
+ duration = pulseIn(echoPin, HIGH); // Reads the echoPin, returns the sound wave
+travel time in microseconds
+ distance= duration*0.034/2;
+Serial.print("Distance: ");
+Serial.print(distance);
+Serial.print(" cm");
+Serial.println();
+ return distance;
+}
