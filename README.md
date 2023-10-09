@@ -4,10 +4,15 @@ Made an automatic hand sanitizer with the help of Arduino.
 
 =>Things that are used
 ● Arduino Uno
+
 ● Transistor
+
 ● Ultrasonic Sensor
+
 ● Servo Motor
+
 ● Connecting Wires
+
 ● Sanitizer Bottle
 
 =>Basic Working
