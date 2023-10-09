@@ -1,9 +1,9 @@
 # Automatic-Hand-Sanitizer
 Made an automatic hand sanitizer with the help of Arduino.
 
-=>My aim was to build an automatic hand sanitizer dispenser which provides a contactless way to dispense sanitizer.
+**=>Aim**-My aim was to build an automatic hand sanitizer dispenser which provides a contactless way to dispense sanitizer.
 
-=>Things that are used
+**=>Things that are used**
 
 ● Arduino Uno
 
@@ -17,7 +17,7 @@ Made an automatic hand sanitizer with the help of Arduino.
 
 ● Sanitizer Bottle
 
-=>Basic Working
+**=>Basic Working**
 
 ● Made use of an ultrasonic sensor (Range: 2 cm to 400 cm and operating voltage: 5V)
 to calculate the distance between the hand and the sanitizer bottle.
@@ -31,7 +31,7 @@ Servo motor and the sanitizer is expelled out of the bottle.
 ![image](https://github.com/Satya-bit/Automatic-Hand-Sanitizer/assets/70309925/033213cc-2b3f-48bd-ad0f-a2c84bad8a6e)
 
 
-=>Working
+**=>Working**
 
 The first component we made use of in the circuit is a HC- SR04 ultrasonic sensor
 to give the perception of the distance of the object (hand). This type of sensor is
@@ -55,7 +55,7 @@ sensor. Faster the response, lesser is the object’s distance.
 
 
 
-=>Demo
+**=>Demo**
 
 https://github.com/Satya-bit/Automatic-Hand-Sanitizer/assets/70309925/f55c0013-2dc2-4588-99f6-e16359dcce1f
 
